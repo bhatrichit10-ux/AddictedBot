@@ -4,7 +4,7 @@ const chalk = require('chalk');
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 const fs = require('fs');
 const path = require('path');
-
+const logger = require('./src/logger.js');
 const foldersPath = path.join(__dirname, 'commands');
 const commandFolders = fs.readdirSync(foldersPath);
 
@@ -45,6 +45,10 @@ client.on(Events.InteractionCreate, async (interaction) => {
 // New version of legacy "Ready" event
 client.once(Events.ClientReady, (c) => {
     console.log(chalk.green(`Ready! Logged in as ${c.user.tag}`));
+    logger.info(`Ready! Logged in as ${c.user.tag}`);
 });
+client.on(Events.Debug, (info) => logger.debug(info));
+client.on(Events.Warn, (info) => logger.warn(info));
+client.on(Events.Error, (error) => logger.error(error));
 
 client.login(process.env.TOKEN);
