@@ -2,6 +2,7 @@ const { Client, Events, GatewayIntentBits, Collection, MessageFlags } = require(
 require('dotenv').config();
 const chalk = require('chalk');
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+
 const fs = require('fs');
 const path = require('path');
 const logger = require('./src/logger.js');
@@ -52,3 +53,4 @@ client.on(Events.Warn, (info) => logger.warn(info));
 client.on(Events.Error, (error) => logger.error(error));
 
 client.login(process.env.TOKEN);
+module.exports = client;

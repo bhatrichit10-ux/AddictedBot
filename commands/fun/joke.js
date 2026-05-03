@@ -22,7 +22,7 @@ module.exports = {
             embeds: [
                 new EmbedBuilder()
                     .setTitle('Here\'s a joke for you!')
-                    .setDescription(`${jokeData.setup}\n\n${jokeData.punchline}`)
+                    .setDescription(`_${jokeData.setup}_\n\n**${jokeData.punchline}**`)
                     .setFooter({
                         text: `Requested by ${interaction.user.tag}`,
                         iconURL: interaction.user.displayAvatarURL({ dynamic: true }),
