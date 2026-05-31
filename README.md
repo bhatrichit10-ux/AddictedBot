@@ -16,3 +16,14 @@ a discord bot with many features
 - slowmode - adds slowmode to the channel
 - warn - DOES NOT WORK FOR NOW - warns user
 - weather - gets the weather for a city
+
+# File Description
+- index.js - connects all the modules and runs the main bot
+- src/ - Tools for clearing and registering commands as well as logging
+- src/logger.js - Pino Logs for your bot
+- commands/ - contains all the commands of the bot
+- commands/fun - contains fun commands
+- commands/moderation - commands for server admins
+- commands/utils - commands for server/bot utilities
+
+
