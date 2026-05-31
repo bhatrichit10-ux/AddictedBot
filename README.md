@@ -32,6 +32,7 @@ a discord bot with many features
 <img width="555" height="223" alt="image" src="https://github.com/user-attachments/assets/adc7e5a6-870f-4fdf-b031-836abfff303c" />
 <img width="813" height="136" alt="image" src="https://github.com/user-attachments/assets/935b4296-80ac-4b4e-924c-5b835a5ae9c5" />
 <img width="527" height="242" alt="image" src="https://github.com/user-attachments/assets/5bdd4e5f-adb7-430d-ab7a-9339a9ec4e4f" />
-
+<img width="560" height="223" alt="image" src="https://github.com/user-attachments/assets/6b9dbb7d-584b-4f00-8a5b-6fa358e546d3" />
+  
 
 
