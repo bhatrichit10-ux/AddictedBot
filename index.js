@@ -11,7 +11,7 @@ const commandFolders = fs.readdirSync(foldersPath);
 
 
 // Command handler - Reference: https://discordjs.guide/legacy/app-creation/handling-commands
-// Red START
+// Ref START
 client.commands = new Collection();
 for (const folder of commandFolders) {
 	const commandsPath = path.join(foldersPath, folder);
