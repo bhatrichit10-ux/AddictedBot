@@ -25,7 +25,67 @@ a discord bot with many features
 - commands/fun - contains fun commands
 - commands/moderation - commands for server admins
 - commands/utils - commands for server/bot utilities
+  
+## Setting Up Locally
 
+Clone the repository
+
+```bash
+git clone https://github.com/bhatrichit10-ux/AddictedBot.git
+cd AddictedBot
+```
+
+Install dependencies
+
+```bash
+bun install
+```
+
+or
+
+```bash
+npm install
+```
+
+Create an environment file
+
+```bash
+cp .env.example .env
+```
+
+Fill in your Discord bot credentials inside `.env`
+
+```env
+TOKEN=your_bot_token
+CLIENT_ID=your_application_id
+GUILD_ID=your_server_id
+```
+
+Register slash commands
+
+```bash
+bun startup.js
+```
+
+or
+
+```bash
+node startup.js
+```
+
+Start the bot
+
+```bash
+bun index.js
+```
+
+or
+
+```bash
+node index.js
+```
+
+The bot should now be online and ready to use.
 # Images of the bot
 <img width="431" height="465" alt="image" src="https://github.com/user-attachments/assets/7f98a5db-b390-462b-9ca6-dcc7902851fd" />
 <img width="417" height="207" alt="image" src="https://github.com/user-attachments/assets/5c3be3a6-75e9-4442-b180-5abbaa6090b5" />
